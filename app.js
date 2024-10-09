@@ -19,7 +19,7 @@ const youngStudentname = students
   .filter((student) => student.age <= 21)
   .forEach((student) => console.log(student.name + ":" + student.age));
 
-console.log(youngStudents:);
+console.log(youngStudents);
 console.log(goodStudent);
 
 //product arrays
@@ -62,6 +62,13 @@ console.log("Electronics:", electronics);
 const expensiveProducts = products.filter((product) => product.price > 300);
 console.log("Expensive Products:", expensiveProducts);
 
-const rating = products
-  .filter((student) => student.age <= 21)
-  .forEach((student) => console.log(student.name + ":" + student.age));
+const rating = products.filter((product) => product.rating >= 4.5);
+console.log("rating:", rating);
+
+const affordableProducts = products.filter((product) => product.price < 1000);
+console.log("affordableProducts:", affordableProducts);
+
+products.forEach((product) => {
+  console.log(product.rating);
+  console.log(affordableProducts);
+});
